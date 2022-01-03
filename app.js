@@ -195,9 +195,9 @@ function edit(r){
        	language.value = row.cells[4].innerHTML;
 
        	// type 
-       	for(var i = 0; i < typeRadio.length ; i++){
-       		if(row.cells[5].innerHTML == typeRadio[i].value){
-       			typeRadio[i].checked = true;
+       	for(var j = 0; j < typeRadio.length ; j++){
+       		if(row.cells[5].innerHTML == typeRadio[j].value){
+       			typeRadio[j].checked = true;
        		}
 		}
 		// saving function
@@ -210,10 +210,9 @@ function edit(r){
 			row.cells[2].innerHTML = price.value;
 			row.cells[3].innerHTML = date.value;
 			row.cells[4].innerHTML = language.value
-			for(var i = 0 ; i < typeRadio.length; i++){
-                    if (typeRadio[i].checked){
-                        row.cells[5] = typeRadio[i].value;
-                        break;
+			for(var j = 0 ; j < typeRadio.length; j++){
+                    if (typeRadio[j].checked){
+                        row.cells[5].innerHTML = typeRadio[j].value;
                     }
                 }
            		r.value = "edit";
