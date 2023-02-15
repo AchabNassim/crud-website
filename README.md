@@ -1,2 +1,1 @@
-# Library-v1
- simple crud website
+A simple crud websites that aims to aid librarians to manage their book store.
